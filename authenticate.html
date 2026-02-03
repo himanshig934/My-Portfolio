@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="output.css">
+
+<link href="https://fonts.googleapis.com/css2?  family=Anton&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<style>
+    *{
+        font-family: poppins !important;
+    }
+
+</style>
+
+
+</head>
+<body class="min-h-screen bg-[#11071f] m-auto">
+
+  
+  <div class="grid grid-cols-2 m-auto justify-center items-center px-12 py-4">
+
+    <div class="logo-heading text-white">
+      <h1 class="lg:text-[20px] md:text-[20px]"><a href="index.html">MY PORTFOLIO</a></h1>
+    </div>
+
+    <div class="text-right text-white text-[12px]">
+      <a href="index.html">Back to home</a>
+    </div>
+  </div>
+
+
+<div class="justify-center items-center m-auto flex pt-20">
+    <div class="bg-[#11071f] w-[380px] border border-white/10 p-8">
+    <h2 class="form-heading text-center text-[18px] font-semibold mb-6 text-white uppercase !font-[poppins] ">Login Form</h2>
+
+    <div class="errorbox">
+      <button class="invalidCred cursor-pointer">
+        <span class="msg">Inavlid Credentials, Please try again later</span>
+        <span class="closebtn">X</span>
+      </button>
+    </div>
+
+      <div class="loginbox">
+      <button class="loginCred cursor-pointer">
+        <span class="msg">Login Successful</span>
+        <span class="closebtn">X</span>
+      </button>
+    </div>
+
+    <form action="#">
+
+    <div class="mb-4">
+      <label class="block text-sm text-gray-600 mb-1 uppercase tracking-[1px]">Username</label>
+     <input type="text" placeholder="Enter username" class="w-full px-4 py-2 border border-white/10 text-gray-600 text-[12px]" required="required" id="username">
+    </div>
+
+    
+    <div class="mb-5">
+      <label class="block text-sm text-gray-600 mb-1 uppercase tracking-[1px]">Password</label>
+      <input type="password" placeholder="Enter password" class="w-full px-4 py-2 border border-white/10 text-gray-600 text-[12px]" required="required" id="password">
+      <i class="fa-solid fa-eye-slash"></i>
+    </div>
+
+    <button class="w-full bg-white text-[#11071f] py-2 !font-[poppins] text-[14px] cursor-pointer" id="loginbtn">Submit</button>
+
+        <p class="text-center text-[12px] mt-4 text-gray-600 !font-[poppins]">No Access Token?<a href="#" class="text-[#7127BA] hover:underline"> REGISTER</a></p>
+
+    </form>    
+  </div>
+
+</div>
+  
+
+
+
+
+
+
+
+   
+<script src="login.js"></script>
+
+</body>
+</html>

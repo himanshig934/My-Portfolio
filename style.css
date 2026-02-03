@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+*{
+
+    font-family: Preahvihear;
+}
+
+.msg{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.form-heading{
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+.invalidCred{
+    padding: 12px;
+    background-color: #2e1315;
+    border: 1px solid #681a1a;
+    display: none;
+    width: 100%;
+}
+
+.loginCred{
+    padding: 12px;
+    background-color: #172b17;
+    border: 1px solid green;
+    display: none;
+    width: 100%;
+}
+
+.errorbox, .loginbox{
+    margin-bottom: 16px;
+}
+
+.closebtn{
+    float: right;
+    color: white;
+}

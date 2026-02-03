@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script>
+  tailwind.config = {
+      screens: {
+        'sm':'640',
+        'md': '768',
+        'lg': '1024px',
+        'xl': '1280px',
+      },
+    theme: {
+      extend: {
+        colors: {
+         
+       }
+      }
+    }
+  }
+</script>
+
+</head>
+<body>
+
+<header class="bg-[#1A0B2E] lg:block hidden md:block px-6">
+    <div class="container-fluid">
+      <div class="container max-w-7xl bg-[#1A0B2E] justify-center items-center m-auto py-4">
+        <div class="grid grid-cols-3 items-center">
+
+            <div class="logo-heading text-white">
+                <h1 class="lg:text-[22px] md:text-[20px]">MY PORTFOLIO</h1>
+            </div>
+
+            <div class="nav flex m-auto">
+                <nav class="flex list-none text-white/70 md:gap-10 lg:gap-16 md:text-[12px] lg:text-[14px] ">
+                    <a href="#home"><li class="hover:text-white transition-all duration-100 active:text-white">Home</li></a>
+                    <a href="#about"><li class="hover:text-white transition-all duration-10 active:text-white">About Us</li></a>
+                    <a href="#contactus"><li class="hover:text-white transition-all duration-100 active:text-white">Contact Us</li></a>
+                </nav>
+
+            </div>
+
+               <div class="loginauth m-auto">
+                    <h2 class="text-white/70 md:text-[12px] lg:text-[14px] hover:text-white transition-all duration-100 cursor-pointer"><a href="authenticate.html">Member Login</a></h2>
+                </div>
+
+
+        </div>
+      </div>
+    </div>
+</header>
+
+<!----------end of desktop view header--------------->
+
+
+<!--------------mobile view header ------>
+
+
+<header class="bg-[#1A0B2E] lg:hidden md:hidden block px-4 transition-all duration-100 ease-in">
+    <div class="container-fluid">
+      <div class="container max-w-7xl bg-[#1A0B2E] justify-center items-center m-auto py-4">
+        <div class=" flex">
+
+            <div class="logo-heading text-white w-[80%]">
+                <h1 class="text-[16px]">MY PORTFOLIO</h1>
+            </div>
+
+            <div class="nav w-[20%] text-white">
+                    <button id="togglebtn">
+                    <i class="fa-solid fa-bars cursor-pointer"></i>
+                    </button>
+            </div>
+
+        </div>
+      </div>
+    </div>
+</header>
+
+<!--------slide header------------->
+<header class="showhead hidden px-6 bg-[#1A0B2E] transition-all duration-300 ease-in-out ">
+    <button class="closebtn float-right text-white bg-white/10 py-2 px-2 rounded-[2px] backdrop-blur-md text-[10px] cursor-pointer"><i class="fa-solid fa-x"></i></button>
+
+    <div class="text-white/70 text-[14px] py-10">
+        <nav class="navbar list-none leading-7 !font-[poppins]">
+         <a href="#home"><li class="hover:text-white transition-all duration-100 active:text-white">Home</li></a>
+         <a href="#about"><li class="hover:text-white transition-all duration-100 active:text-white">About Us</li></a>
+         <a href="#services"><li class="hover:text-white transition-all duration-100 active:text-white">Services</li></a>
+         <a href="#contactus"><li class="hover:text-white transition-all duration-100 active:text-white">Contact Us</li></a>
+         </nav>
+    </div>
+</header>
+
+
+
+
+
+<!------banner section---->
+
+<section class="bg-[#11071f]">
+    <div class="container-fluid py-20">
+        <div class="container max-w-7xl justify-center items-center m-auto">
+         <div class="grid lg:[grid-template-columns:0.9fr_2fr] md:grid-cols-2">
+
+            <div class="text-center text-center relative">
+                <img src="img/image 1.png" alt="" class="w-[30%] m-auto">
+            </div>
+
+           <div class="font-[Preahvihear] font-light">
+           
+            <div class="hidden lg:block md:block">
+            <span class="text-white">Hello! I Am</span> <span class="text-[#7127BA]">Ibrahim Memon</span>
+            </div>
+
+           <div class="lg:hidden md:hidden pt-10">
+            <h2 class="text-white text-center">Hello! I Am</span> <span class="text-[#7127BA]">Ibrahim Memon</span></div>
+           
+           <div class="pt-8 text-white text-center lg:text-left md:text-left">
+            <h2 class="text-[12px]">A Designer who</h2>
+            <h2 class="text-[28px] lg:text-[32px] md:text-[28px]">Judges a Book</h2>
+           <h2 class="text-[28px] lg:text-[32px] md:text-[28px] ">by its <span class="text-[#7127BA] border border-[#eeeeee] rounded-[50%] overflow-hidden px-2">Cover</span>...</h2>
+           </div>
+
+           </div>
+
+         </div>
+        </div>
+    </div>
+</section>
+
+
+<!--------------about------------------>
+
+
+<section id="about" class="bg-[#11071f] px-6 pt-6 lg:px-0 md:px-0 ">
+    <div class="container-fluid pb-20">
+        <div class="container max-w-4xl justify-center items-center m-auto">
+
+            <div class="text-white lg:text-start md:text-center">
+                <h2 class="text-[24px] md:text-[28px] lg:text-[32px]">I'm a Software Engineer.|</h2>
+            </div>
+            
+            <div class="text-[14px] lg:text-start md:text-center md:text-[12px] lg:text-[14px] pt-6 ">
+                <span class="text-white">Currently, I'm a Software Engineer at,</span> 
+                <span class="text-[#1877F2]"><i class="fa-brands fa-facebook text-[#1877F2]"></i> facebook</span>
+            </div>
+
+             <div class="text-[12px] text-white pt-12 tracking-[1px] lg:text-start md:text-center md:text-[12px] lg:text-[14px]">
+                <p>A self-taught UI/UX designer, functioning in the industry for 3+ years now. <br class="hidden lg:block md:block">
+                     I make meaningful and delightful digital products that create an equilibrium <br class="hidden lg:block md:block">between user needs and business goals.
+
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<!-------------------experinece--------------->
+
+
+<section class="bg-[#11071f] px-6">
+    <div class="container-fluid pb-20 lg:pt-16 md:pt-10">
+        <div class="container max-w-4xl justify-center items-center m-auto">
+
+            <div class="text-white text-start">
+                <h2 class="text-[24px] md:text-[28px] lg:text-[32px]">Work Experience</h2>
+            </div>
+            
+
+              <div class="justify-center relative -mt-[10%]">
+                <img src="img/Gradient.png" alt="" class="justify-center text-center m-auto items-center">
+              </div>
+
+              
+       <div class="grid lg:grid-cols-2 md:grid-cols-2 gap-4 relative z-10 lg:-mt-[64%] md:-mt-[80%] -mt-[90%]">
+
+        <!------box1------>
+        <div class="bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] px-4 py-8 rounded-[8px] border-[#7127BA] border-t-4">
+            <div class="text-white lg:flex md:flex">
+            <img src="img/Group 2.png" alt="" class="size-22">
+             
+            <div class="lg:pl-8 md:pl-8 pl-0 m-auto pt-4 lg:pt-0 md:pt-0">
+             <h2 class="text-[20px]">CIB on the Mobile</h2>
+             <p class="text-[10px] text-white/80 leading-relaxed pt-2">Take your client onboard seamlessly by our amazing tool of digital onboard process</p>
+             <button class="bg-[#2C1250] text-[12px] px-4 py-2 mt-4 border-[#7127BA] border-1 rounded-[10px]">LEARN MORE</button>
+            </div>
+
+            </div>
+        </div>
+
+
+        <!------box2------>
+          <div class="bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] px-4 py-8 rounded-[8px] border-[#7127BA] border-t-4">
+            <div class="text-white lg:flex md:flex">
+            <img src="img/Group 1935.png" alt="" class="h-22">
+             
+            <div class="lg:pl-8 md:pl-8 pl-0 m-auto pt-4 lg:pt-0 md:pt-0">
+             <h2 class="text-[20px]">CIB on the Mobile</h2>
+             <p class="text-[10px] text-white/80 leading-relaxed pt-2">Take your client onboard seamlessly by our amazing tool of digital onboard process</p>
+             <button class="bg-[#2C1250] text-[12px] px-4 py-2 mt-4 border-[#7127BA] border-1 rounded-[10px]">LEARN MORE</button>
+            </div>
+
+            </div>
+        </div>
+
+        
+           <!------box3------>
+          <div class="bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] px-4 py-8 rounded-[8px] border-[#7127BA] border-t-4">
+            <div class="text-white lg:flex md:flex">
+            <img src="img/Icons.png" alt="" class="h-22">
+             
+            <div class="lg:pl-8 md:pl-8 pl-0 m-auto pt-4 lg:pt-0 md:pt-0">
+             <h2 class="text-[20px]">CIB on the Mobile</h2>
+             <p class="text-[10px] text-white/80 leading-relaxed pt-2">Take your client onboard seamlessly by our amazing tool of digital onboard process</p>
+             <button class="bg-[#2C1250] text-[12px] px-4 py-2 mt-4 border-[#7127BA] border-1 rounded-[10px]">LEARN MORE</button>
+            </div>
+
+            </div>
+        </div>
+
+
+       <!------box4------>
+       <div class="bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] px-4 py-8 rounded-[8px] border-[#7127BA] border-t-4">
+            <div class="text-white lg:flex md:flex">
+            <img src="img/Group 1.png" alt="" class="size-22">
+             
+            <div class="lg:pl-8 md:pl-8 pl-0 m-auto pt-4 lg:pt-0 md:pt-0">
+             <h2 class="text-[20px]">CIB on the Mobile</h2>
+             <p class="text-[10px] text-white/80 leading-relaxed pt-2">Take your client onboard seamlessly by our amazing tool of digital onboard process</p>
+             <button class="bg-[#2C1250] text-[12px] px-4 py-2 mt-4 border-[#7127BA] border-1 rounded-[10px]">LEARN MORE</button>
+            </div>
+
+            </div>
+        </div>
+
+       </div>
+       
+    </div>
+    </div>
+</section>
+
+
+<!-------------------services------------->
+
+
+<section class="bg-[#11071f] pb-8 lg:pt-30 md:pt-10 px-6 hidden lg:block md:block">
+    <div class="container-fluid pb-20">
+        <div class="container max-w-4xl justify-center items-center m-auto">
+
+       <div class="grid grid-cols-2 relative">
+    
+        <div class="left-side items-center relative z-10 pt-4">
+            <h1 class="text-[#7127BA] text-[14px] !font-[poppins] tracking-wide">Featured Project</h1>
+            <h1 class="text-[#CCD6F6] !font-[poppins] text-[28px] lg:text-[28px] md:text-[26px]">Example Project</h1>
+
+            <div class="text-[12px] text-white mt-6 bg-white/10 py-4 px-8 rounded-[10px] -mr-[60px] backdrop-blur-md">
+                <p class="!font-[poppins] lg:text-[12px] md:text-[10px]">A web app for visualizing personalized Spotify data. View your
+                    top artists, top tracks, recently played tracks, and detailed audio
+                   information about each track. Create and save new playlists of
+                     recommended tracks based on your existing playlists and more.</p>
+            </div>
+        </div>
+
+        <div class="right-side bg-[#2B0B3A] rounded-[10px] relative">
+             <div class="float-right w-[94%] mt-[24px] relative">
+                <img src="img/leftside.png" alt="">
+             </div>
+        </div>
+
+       </div>
+
+
+
+       <div class="grid grid-cols-2 relative pt-20">
+
+        <div class="right-side bg-[#2B0B3A] rounded-[10px] relative">
+             <div class="float-left w-[94%] mt-[24px] relative">
+                <img src="img/leftside.png" alt="">
+             </div>
+        </div>
+
+
+        <div class="left-side items-center relative z-10 pt-4">
+            <h1 class="text-[#7127BA] text-[14px] !font-[poppins] tracking-wide text-right">Featured Project</h1>
+            <h1 class="text-[#CCD6F6] !font-[poppins] text-[28px] text-right lg:text-[28px] md:text-[26px]">Example Project</h1>
+
+            <div class="text-[12px] lg:text-[12px] md:text-[10px] text-white mt-6 bg-white/10 py-4 pl-[50px] pr-[20px] rounded-[10px] -ml-[64px] backdrop-blur-md">
+                <p class="!font-[poppins]">A web app for visualizing personalized Spotify data. View your
+                    top artists, top tracks, recently played tracks, and detailed audio
+                   information about each track. Create and save new playlists of
+                     recommended tracks based on your existing playlists and more.</p>
+            </div>
+        </div>
+
+       </div>
+
+    </div>
+    </div>
+</section>
+
+<!-----------mobile view----------->
+
+
+
+
+<section class="bg-[#11071f] pb-8 px-6 lg:hidden md:hidden block">
+    <div class="container-fluid pb-20">
+        <div class="container max-w-4xl justify-center items-center m-auto">
+
+
+       <div class="grid relative">
+
+        <div class="heading">
+            <h1 class="text-[#7127BA] text-[14px] !font-[poppins] tracking-wide text-left">Featured Project</h1>
+            <h1 class="text-[#CCD6F6] !font-[poppins] text-[26px] text-left">Example Project</h1>
+        </div>
+
+        <div class="right-side bg-[#2B0B3A] rounded-[10px] relative mt-6">
+             <div class="float-left w-[94%] mt-[16px] relative">
+                <img src="img/leftside.png" alt="">
+             </div>
+        </div>
+
+
+        <div class="left-side items-center relative z-10 pt-4">
+            <div class="text-[12px] lg:text-[12px] md:text-[10px] text-white mt-6 bg-white/10 py-4 px-4 rounded-[10px] backdrop-blur-md">
+                <p class="!font-[poppins]">A web app for visualizing personalized Spotify data. View your
+                    top artists, top tracks, recently played tracks, and detailed audio
+                   information about each track. Create and save new playlists of
+                     recommended tracks based on your existing playlists and more.</p>
+            </div>
+        </div>
+
+
+        <!---------card 2------>
+        <div class="heading mt-10">
+            <h1 class="text-[#7127BA] text-[14px] !font-[poppins] tracking-wide text-left">Featured Project</h1>
+            <h1 class="text-[#CCD6F6] !font-[poppins] text-[26px] text-left">Example Project</h1>
+        </div>
+
+        <div class="right-side bg-[#2B0B3A] rounded-[10px] relative mt-6">
+             <div class="float-left w-[94%] mt-[16px] relative">
+                <img src="img/leftside.png" alt="">
+             </div>
+        </div>
+
+
+        <div class="left-side items-center relative z-10 pt-4">
+            <div class="text-[12px] lg:text-[12px] md:text-[10px] text-white mt-6 bg-white/10 py-4 px-4 rounded-[10px] backdrop-blur-md">
+                <p class="!font-[poppins]">A web app for visualizing personalized Spotify data. View your
+                    top artists, top tracks, recently played tracks, and detailed audio
+                   information about each track. Create and save new playlists of
+                     recommended tracks based on your existing playlists and more.</p>
+            </div>
+        </div>
+
+
+       </div>
+
+    </div>
+    </div>
+</section>
+
+<!-------------footer----------->
+
+<section id="contactus" class="bg-[#11071f] lg:pb-12 lg:pt-10 mt:pt-4 pb:pb-6 px-6">
+    <div class="container-fluid pb-20">
+        <div class="container max-w-4xl justify-center items-center m-auto">
+
+            <div class="text-white text-start">
+                <h2 class="text-[22px]">Contact</h2>
+            </div>
+
+             <div class="text-[12px] text-white lg:pt-10 mt:pt-8 tracking-[1px] leading-[20px] mt-8">
+                <p>I'm currently looking to join a cross-functional team that values improving people's lives<br>
+                   through accessible design. or have a project in mind? Let's connect.</p>
+                    <p class="mt-6">ibrhaimmemon930@gmail.com</p>
+             </div>
+
+             <div class="icons text-white gap-20 mt-4">
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-google"></i></span>
+                <span><i class="fa-light fa-globe"></i></span>
+             </div>
+
+    </div>
+    </div>
+</section>
+
+
+<script src="main.js"></script>
+</body>
+</html>
