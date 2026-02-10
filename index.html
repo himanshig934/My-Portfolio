@@ -16,23 +16,6 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<script>
-  tailwind.config = {
-      screens: {
-        'sm':'640',
-        'md': '768',
-        'lg': '1024px',
-        'xl': '1280px',
-      },
-    theme: {
-      extend: {
-        colors: {
-         
-       }
-      }
-    }
-  }
-</script>
 
 </head>
 <body>
@@ -117,7 +100,7 @@
          <div class="grid lg:[grid-template-columns:0.9fr_2fr] md:grid-cols-2">
 
             <div class="text-center text-center relative">
-                <img src="img/image 1.png" alt="" class="w-[30%] m-auto">
+                <img src="img/image 1.png" alt="" class="w-[30%] m-auto animate-pulse">
             </div>
 
            <div class="font-[Preahvihear] font-light">
@@ -146,7 +129,7 @@
 <!--------------about------------------>
 
 
-<section id="about" class="bg-[#11071f] px-6 pt-6 lg:px-0 md:px-0 ">
+<section id="about" class="bg-[#11071f] px-6 pt-6 lg:px-0 md:px-0">
     <div class="container-fluid pb-20">
         <div class="container max-w-4xl justify-center items-center m-auto">
 
@@ -182,21 +165,22 @@
             
 
               <div class="justify-center relative -mt-[10%]">
-                <img src="img/Gradient.png" alt="" class="justify-center text-center m-auto items-center">
+                <img src="img/Gradient.png" alt="" class="justify-center text-center m-auto items-center animate-spin">
               </div>
 
               
        <div class="grid lg:grid-cols-2 md:grid-cols-2 gap-4 relative z-10 lg:-mt-[64%] md:-mt-[80%] -mt-[90%]">
 
         <!------box1------>
-        <div class="bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] px-4 py-8 rounded-[8px] border-[#7127BA] border-t-4">
+        <div class="group bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] px-4 py-8 rounded-[8px] border-[#7127BA] border-t-4 cursor-pointer
+        transition-all delay-100 duration-500 hover:transition-all hover:-translate-y-2">
             <div class="text-white lg:flex md:flex">
             <img src="img/Group 2.png" alt="" class="size-22">
              
             <div class="lg:pl-8 md:pl-8 pl-0 m-auto pt-4 lg:pt-0 md:pt-0">
              <h2 class="text-[20px]">CIB on the Mobile</h2>
              <p class="text-[10px] text-white/80 leading-relaxed pt-2">Take your client onboard seamlessly by our amazing tool of digital onboard process</p>
-             <button class="bg-[#2C1250] text-[12px] px-4 py-2 mt-4 border-[#7127BA] border-1 rounded-[10px]">LEARN MORE</button>
+             <button class="group-hover:bg-[#130428] bg-[#2C1250] text-[12px] px-4 py-2 mt-4 border-[#7127BA] border-1 rounded-[10px] transition-all delay-100   duration-300 hover:transition-all cursor-pointer">LEARN MORE</button>
             </div>
 
             </div>
@@ -204,14 +188,16 @@
 
 
         <!------box2------>
-          <div class="bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] px-4 py-8 rounded-[8px] border-[#7127BA] border-t-4">
+          <div class="group bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] px-4 py-8 rounded-[8px] border-[#7127BA] border-t-4
+          transition-all delay-100 duration-500 hover:transition-all hover:-translate-y-2">
             <div class="text-white lg:flex md:flex">
             <img src="img/Group 1935.png" alt="" class="h-22">
              
             <div class="lg:pl-8 md:pl-8 pl-0 m-auto pt-4 lg:pt-0 md:pt-0">
              <h2 class="text-[20px]">CIB on the Mobile</h2>
              <p class="text-[10px] text-white/80 leading-relaxed pt-2">Take your client onboard seamlessly by our amazing tool of digital onboard process</p>
-             <button class="bg-[#2C1250] text-[12px] px-4 py-2 mt-4 border-[#7127BA] border-1 rounded-[10px]">LEARN MORE</button>
+             <button class="bg-[#2C1250] text-[12px] px-4 py-2 mt-4 border-[#7127BA] border-1 rounded-[10px] transition-all delay-100 duration-300
+             hover:transition-all group-hover:bg-[#130428] cursor-pointer">LEARN MORE</button>
             </div>
 
             </div>
@@ -219,14 +205,16 @@
 
         
            <!------box3------>
-          <div class="bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] px-4 py-8 rounded-[8px] border-[#7127BA] border-t-4">
+          <div class="group bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] px-4 py-8 rounded-[8px] border-[#7127BA] border-t-4
+          transition-all delay-100 duration-500 hover:transition-all hover:-translate-y-2">
             <div class="text-white lg:flex md:flex">
             <img src="img/Icons.png" alt="" class="h-22">
              
             <div class="lg:pl-8 md:pl-8 pl-0 m-auto pt-4 lg:pt-0 md:pt-0">
              <h2 class="text-[20px]">CIB on the Mobile</h2>
              <p class="text-[10px] text-white/80 leading-relaxed pt-2">Take your client onboard seamlessly by our amazing tool of digital onboard process</p>
-             <button class="bg-[#2C1250] text-[12px] px-4 py-2 mt-4 border-[#7127BA] border-1 rounded-[10px]">LEARN MORE</button>
+             <button class="bg-[#2C1250] text-[12px] px-4 py-2 mt-4 border-[#7127BA] border-1 rounded-[10px] transition-all delay-100 duration-300
+             hover:transition-all group-hover:bg-[#130428] cursor-pointer">LEARN MORE</button>
             </div>
 
             </div>
@@ -234,14 +222,16 @@
 
 
        <!------box4------>
-       <div class="bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] px-4 py-8 rounded-[8px] border-[#7127BA] border-t-4">
+       <div class="group bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] px-4 py-8 rounded-[8px] border-[#7127BA] border-t-4
+       transition-all delay-100 duration-500 hover:transition-all hover:-translate-y-2">
             <div class="text-white lg:flex md:flex">
             <img src="img/Group 1.png" alt="" class="size-22">
              
             <div class="lg:pl-8 md:pl-8 pl-0 m-auto pt-4 lg:pt-0 md:pt-0">
              <h2 class="text-[20px]">CIB on the Mobile</h2>
              <p class="text-[10px] text-white/80 leading-relaxed pt-2">Take your client onboard seamlessly by our amazing tool of digital onboard process</p>
-             <button class="bg-[#2C1250] text-[12px] px-4 py-2 mt-4 border-[#7127BA] border-1 rounded-[10px]">LEARN MORE</button>
+             <button class="bg-[#2C1250] text-[12px] px-4 py-2 mt-4 border-[#7127BA] border-1 rounded-[10px] transition-all delay-100 duration-300
+             hover:transition-all group-hover:bg-[#130428] cursor-pointer">LEARN MORE</button>
             </div>
 
             </div>
@@ -275,7 +265,7 @@
             </div>
         </div>
 
-        <div class="right-side bg-[#2B0B3A] rounded-[10px] relative">
+        <div class="right-side bg-[#2B0B3A] rounded-[10px] relative animate-slide-left">
              <div class="float-right w-[94%] mt-[24px] relative">
                 <img src="img/leftside.png" alt="">
              </div>
